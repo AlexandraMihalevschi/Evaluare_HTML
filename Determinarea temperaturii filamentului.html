@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Determinarea temperaturii filamentului unui bec</title>
+	</head>
+	<body style="font-size:large">
+        
+        <!-- Numele, prenumele și clasa elevului care realizează lucrarea de laborator -->
+        <style> #tabel{ margin: auto; width: 60%; border-collapse: initial;} #tabel, #th, #td { border: 1px solid rgb(255, 255, 255); font-size: small; color: rgb(105, 105, 105);} </style> 
+        <div><table id="tabel">
+            <tr> <th class="th">    Nume Prenume:        </th> <th class="th">         Data:           </th> <th class="th">         Clasa:       </th></tr> 
+            <tr> <td class="td"><textarea  rows = "1" cols = "50" name = "description"></textarea></td> <td class="td"><textarea  rows = "1" cols = "50" name = "description"></textarea></td> <td class="td"><textarea  rows = "1" cols = "50" name = "description"></textarea></td> </tr> 
+        </table>
+        </div>
+        <br>
+
+        <!-- Denumirea, scopul lucrării, utilijul, note teoretice + formule -->
+        <div>
+            <b style="text-align: center;"><h2>Determinarea temperaturii filamentului unui bec</h2></b></br>
+            <b>Scopul lucrării:</b> să se determine temperatura filamentului unui bec electric. </br>
+            <b>Utilaj:</b> sursă de curent, bec, multimetru, întrerupător, fire de conexiune. </br>
+            <b>Note teoretice:</b> Pentru conducătoarele metalice dependența rezistenței de tensiune este dată de:</br>
+
+            <img src="Formula 1.jpg" style="width: 130px; height: auto; margin: 30px 50px;"></br>
+
+            unde R<sub>0</sub> este rezistența la temperatura inițială T<sub>0</sub>, α – coeficientul de temperatura al rezistenței (pentru wolfram α = 4,8 ∙ 10<sup>-3</sup> K<sup>-1</sup>), iar T este temperatura finală. 
+            Ținând cont că rezistența este dată de R = U/I, avem </br>
+
+            <img src="Formula 2.jpg" style="width: 130px; height: auto; margin: 30px 50px;"></br>
+        </div>
+
+        <!-- Erorile + formula nr.3 -->
+        <div>
+            <b>Erori:</b></br>
+            <img src="Formula 3.1.jpg" width="200" height="auto" style="margin: 30px 50px;">
+            <img src="Formula 3.2.jpg" width="200" height="auto" style="margin: 30px 20px;"></br>
+            <img src="Formula 3.3.jpg" width="450" height="auto" style="margin: 30px 50px;">
+        </div>
+
+        <!-- Modul de lucru -->
+        <div>
+            <b>Modul de lucru:</b></br>
+            <ol type="1">
+                <li>
+                    Accesați site-ul <a href="https://dcaclab.com/en/lab">https://dcaclab.com/en/lab</a>.</br>
+                    <img src="Experiment.jpg" style="width: 811px; height: auto;"></br>
+                    Așa va arăta pagina la început.
+                </li>
+                <br>
+                <li>
+                    Selectăm un bec, o sursă de curent (d.e. o baterie), un întrerupător și un multimetru.</br>
+                    <img src="Elementele.jpg" usemap="#image-map">
+                    <map name="image-map">
+                        <area alt="Multimetru" title="Multimetru" href="https://cleste.ro/atelier/cum-se-utilizeaza-un-multimetru/" coords="300,507,23,94" shape="rect">
+                        <area alt="Bec" title="Bec" href="https://ro.wikipedia.org/wiki/Bec_incandescent" coords="725,277,56" shape="circle">
+                        <area alt="Sursă de energie" title="Sursă de energie" href="https://ro.wikipedia.org/wiki/Baterie_electric%C4%83" coords="425,374,529,418" shape="rect">
+                        <area alt="Întrerupător" title="Întrerupător" href="https://ro.wikipedia.org/wiki/%C3%8Entrerup%C4%83tor" coords="440,129,508,224" shape="rect">
+                    </map>
+                </li>
+                <br>
+                <li>
+                    Setăm multimetrul în calitate de ohmmetru și măsurăm rezistența becului la temperatura camerei.<br>
+                    <img src="Etapa 1.jpg" style="width: 400px; height: auto;">
+                </li>
+                <br>
+                <li>
+                    Montăm circuitul conform schemei, închidem întrerupătorul și determinăm tensiunea și intensitatea curentului. În loc de voltmetru și amperimetru vom utiliza multimetrul.<br>
+                    <br>
+                    <details>
+                        <summary>
+                          Schema circuitului
+                        </summary>
+                        <p><img src="Desen.jpg"></p>
+                    </details><br>
+                    Exemplu:<br>
+                    <img src="Etapa 2.jpg" style="width: 400px; height: auto;">
+                </li>   
+                <br>
+                <li>Calculăm temperatura filamentului becului, și erorile respective.</li><br>
+                <li>Scriem exemple de calcul, rezultatul final și formulăm concluziile de rigoare.</li>
+              </ol>
+        </div>
+
+        <!-- Tabelul pentru măsurări -->
+        <div>
+            <b>Tabelul măsurărilor și determinărilor:</b></br></br>
+            <style> 
+            table 
+            {
+                margin: auto; 
+                width: 90%;
+                border-collapse: collapse; 
+            } 
+            table, th, td 
+            {
+                border: 1px solid rgb(0, 0, 0);
+            }
+            td 
+            { 
+                height: 25px; 
+            }
+            </style>
+
+            <table id="table1">
+                <tr style="background-color: rgb(154, 154, 154);"><th class="th1" style="width:50px;">Nr.</th><th class="th1">R<sub>0</sub>, Ω</th>             <th class="th1">T<sub>0</sub>, ℃</th>             <th class="th1">U, V</th> <th class="th1">I, A</th> <th class="th1">T, ℃</th> <th class="th1">∆T, ℃</th> <th class="th1">ε<sub>T</sub></th></tr> 
+                <tr> <td class="td1">1. </td>                       <td class="td1" rowspan="5"> </td>                <td class="td1" rowspan="5"> </td>                 <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>      <td class="td1" rowspan="5"> </td> </tr> 
+                <tr> <td class="td1">2. </td>                                                                                                                            <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>       
+                <tr> <td class="td1">3. </td>                                                                                                                           <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>      
+                <tr> <td class="td1">4. </td>                                                                                                                           <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>       
+                <tr> <td class="td1">5. </td>                                                                                                                           <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>       
+                <tr style="background-color: rgb(189, 189, 189);"> <td class="td1">Valorile medii </td> <td class="td1"> </td><td class="td1"> </td>                  <td class="td1"> </td>    <td class="td1"> </td>    <td class="td1"> </td>     <td class="td1"> </td>     <td class="td1"> </td> 
+            </table>
+            </br>
+        </div>
+
+        <!-- Exemple de calcule -->
+        <div>
+            <b>Exemple de calcule</b><br>
+            <img src="Formula 4.jpg" width="100" height="auto" style="margin: 50px 50px;"></br>
+        </div>
+
+        <!-- Rezultatul final -->
+        <div>
+            <b>Rezultatul final</b><br>
+            <img src="Formula 5.jpg" width="550" height="auto" style="margin: 50px 50px;"></br>
+        </div>
+
+        <!-- Concluzii -->
+        <div>
+            <b>Concluzii</b><br><br>
+            <textarea rows = "5" cols = "150" name = "description">
+În concluzie...
+            </textarea><br>
+        </div>
+        <br>
+
+        <!-- Întrebări și exerciții -->
+        <div>
+            <b>Întrebări și exerciții</b><br>
+            <ol>
+                <li>Deduceți relațiile (2) și (3). <br>
+                <textarea rows = "5" cols = "150" name = "description">
+Formula 2 se deduce din ...
+                </textarea><br>
+                </li>
+
+                <li>De ce becurile de incandescență ard de cele mai multe ori de la pornire? <br>
+                <textarea rows = "5" cols = "150" name = "description">
+Becurile de incandescență arde de cele mai multe ori ...
+                </textarea><br>
+                </li>
+
+                <li>
+                Ce utilaj suplimentar ar trebui să folosim dacă nu am avea multimetru?<br>
+                <textarea rows = "5" cols = "150" name = "description">
+Dacă nu am avea multimetru, atunci...
+                </textarea><br>
+                </li>
+            </ol>
+        </div>
+
+	</body>
+</html>
